@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>sadyanz shop</title>
+      <link rel="stylesheet" href="../src/css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Spray+Paint&display=swap"
+         rel="stylesheet"
+      />
+
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body class="font-[Poppins]">
+      <!-- modal box withdraw start -->
+      <section
+         id="subMenu2"
+         class="sub-menu2 w-full h-[100vh] mx-auto flex justify-center"
+      >
+         <main class="w-[30rem]">
+            <nav
+               class="bg-gray-900 text-white flex justify-between items-center px-6 rounded-bottom-md h-[50px] rounded-b-3xl"
+            >
+               <span id="backBtnWd" class="cursor-pointer">
+                  <svg
+                     width="40px"
+                     height="40px"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                     <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     ></g>
+                     <g id="SVGRepo_iconCarrier">
+                        <path
+                           d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                           stroke="#ffffff"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M9.00002 15.3802H13.92C15.62 15.3802 17 14.0002 17 12.3002C17 10.6002 15.62 9.22021 13.92 9.22021H7.15002"
+                           stroke="#ffffff"
+                           stroke-width="1.5"
+                           stroke-miterlimit="10"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M8.57 10.7701L7 9.19012L8.57 7.62012"
+                           stroke="#ffffff"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                     </g>
+                  </svg>
+               </span>
+               <div class="flex gap-2 items-center text-center">
+                  <p class="text-xl font-bold">Penarikan</p>
+               </div>
+               <svg
+                  class="w-8 h-8 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="white"
+                  viewBox="0 0 24 24"
+               >
+                  <path
+                     d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"
+                  />
+               </svg>
+            </nav>
+
+            <div class="mx-auto w-[30rem] pt-3 px-3">
+               <div class="pb-4 px-3 border-b-2 border-gray-900">
+                  <h2>Saldo</h2>
+                  <h1 class="text-2xl font-bold">
+                     <span id="saldo2"></span>
+                  </h1>
+               </div>
+               <h2 class="text-start pt-3">Pilih Nominal Penarikan</h2>
+               <div
+                  class="flex flex-wrap justify-center gap-x-2 gap-y-4 mt-3 pb-8"
+               >
+                  <button
+                     onclick="addNum('IDR 50.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 50.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 75.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 75.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 100.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 100.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 250.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 250.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 500.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 500.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 1.000.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 1.000.000
+                  </button>
+               </div>
+               <h2 class="mb-3 px-3">Masukan Nominal Penarikan</h2>
+               <div class="relative w-100 mb-5">
+                  <input
+                     type="text"
+                     id="penarikan"
+                     oninput="updateOutput()"
+                     onfocus="addIDR()"
+                     onblur="checkEmpty()"
+                     class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900 placeholder-transparent rounded-2xl"
+                     placeholder=" "
+                     value="IDR "
+                  />
+
+                  <label
+                     for="penarikan"
+                     class="cursor-text absolute left-4 top-2 text-transparent text-sm transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-gray-900 peer-focus:bg-white peer-focus:px-1"
+                  >
+                     Jumlah Penarikan
+                  </label>
+               </div>
+               <div class="relative w-100 my-8">
+                  <textarea
+                     placeholder=" "
+                     name="note"
+                     id="note"
+                     cols="20"
+                     rows="4"
+                     class="p-3 peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900 placeholder-transparent rounded-2xl"
+                  ></textarea>
+
+                  <label
+                     for="note"
+                     class="cursor-text absolute left-4 top-2 text-transparent text-sm transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-gray-900 peer-focus:bg-white peer-focus:px-1"
+                  >
+                     Catatan (Optional)
+                  </label>
+               </div>
+            </div>
+
+            <footer
+               class="fixed w-[30rem] flex justify-between items-center bottom-0 bg-gray-900 rounded-t-3xl text-white px-7 py-3"
+            >
+               <div class="">
+                  <p>Jumlah Penarikan</p>
+                  <h1 class="font-bold text-2xl">
+                     <span id="outputJumlah"></span>
+                  </h1>
+               </div>
+               <button
+                  id="btnWd"
+                  class="rounded-2xl bg-green-400 hover:bg-red-400 px-6 py-2"
+               >
+                  Lanjutkan
+               </button>
+            </footer>
+         </main>
+      </section>
+      <!-- modal box withdraw end -->
+
+      <!-- modal box isi ulang start -->
+      <section
+         id="subMenu"
+         class="sub-menu w-full h-[100vh] mx-auto flex justify-center"
+      >
+         <main class="w-[30rem]">
+            <nav
+               class="bg-gray-900 text-white flex justify-between items-center px-6 rounded-bottom-md h-[50px] rounded-b-3xl"
+            >
+               <span id="backBtnDp" class="cursor-pointer">
+                  <svg
+                     width="40px"
+                     height="40px"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                     <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     ></g>
+                     <g id="SVGRepo_iconCarrier">
+                        <path
+                           d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                           stroke="#ffffff"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M9.00002 15.3802H13.92C15.62 15.3802 17 14.0002 17 12.3002C17 10.6002 15.62 9.22021 13.92 9.22021H7.15002"
+                           stroke="#ffffff"
+                           stroke-width="1.5"
+                           stroke-miterlimit="10"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M8.57 10.7701L7 9.19012L8.57 7.62012"
+                           stroke="#ffffff"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                     </g>
+                  </svg>
+               </span>
+               <div class="flex gap-2 items-center text-center">
+                  <p class="text-xl font-bold">Isi Ulang</p>
+               </div>
+               <svg
+                  class="w-8 h-8 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="white"
+                  viewBox="0 0 24 24"
+               >
+                  <path
+                     d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"
+                  />
+               </svg>
+            </nav>
+
+            <div class="mx-auto w-[30rem] pt-3 px-3">
+               <h2 class="text-start">Pilih Nominal Isi Ulang</h2>
+               <div
+                  class="flex flex-wrap justify-center gap-x-2 gap-y-4 mt-3 border-b-2 border-gray-900 pb-8"
+               >
+                  <button
+                     onclick="addNum('IDR 50.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 50.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 75.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 75.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 100.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 100.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 250.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 250.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 500.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 500.000
+                  </button>
+                  <button
+                     onclick="addNum('IDR 1.000.000')"
+                     class="bg-gray-900 rounded-3xl text-white w-[9rem] px-3 hover:bg-gray-700 py-2"
+                  >
+                     IDR 1.000.000
+                  </button>
+               </div>
+               <h3
+                  class="relative text-md -top-3 left-[6.5rem] bg-white px-1 w-[15.5rem]"
+               >
+                  Atau Isi Nominal Di Bawah Ini
+               </h3>
+               <div class="relative w-100 mb-5">
+                  <input
+                     type="text"
+                     id="pengisian"
+                     oninput="updateOutput()"
+                     onfocus="addIDR()"
+                     onblur="checkEmpty()"
+                     class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900 placeholder-transparent rounded-2xl"
+                     placeholder=" "
+                     value="IDR "
+                  />
+
+                  <label
+                     for="pengisian"
+                     class="cursor-text absolute left-4 top-2 text-transparent text-sm transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-gray-900 peer-focus:bg-white peer-focus:px-1"
+                  >
+                     Nominal
+                  </label>
+               </div>
+               <div class="relative w-100 my-8">
+                  <textarea
+                     placeholder=" "
+                     name="note"
+                     id="note"
+                     cols="20"
+                     rows="4"
+                     class="p-3 peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900 placeholder-transparent rounded-2xl"
+                  ></textarea>
+
+                  <label
+                     for="note"
+                     class="cursor-text absolute left-4 top-2 text-transparent text-sm transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-gray-900 peer-focus:bg-white peer-focus:px-1"
+                  >
+                     Catatan (Optional)
+                  </label>
+               </div>
+            </div>
+
+            <footer
+               class="fixed w-[30rem] flex justify-between items-center bottom-0 bg-gray-900 rounded-t-3xl text-white px-7 py-3"
+            >
+               <div class="">
+                  <p>Jumlah isi ulang</p>
+                  <h1 class="font-bold text-2xl"><span id="output2"></span></h1>
+               </div>
+               <button
+                  id="btnDepo"
+                  class="rounded-2xl bg-green-600 hover:bg-red-400 px-6 py-2"
+               >
+                  Lanjutkan
+               </button>
+            </footer>
+         </main>
+      </section>
+      <!-- modal box isi ulang end -->
+
+      <!-- page utama start-->
+      <section id="menu" class="menu">
+         <div>
+            <nav
+               class="bg-gray-900 text-white flex justify-between items-center px-5 rounded-bottom-md h-[50px] rounded-b-2xl"
+            >
+               <div class="flex gap-2 items-center">
+                  <img src="../src/img/tiktokshop.png" alt="" width="25px" />
+                  <p class="text-xl font-bold">TikTok Shop | TokoPedia</p>
+               </div>
+               <svg
+                  class="w-8 h-8 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="white"
+                  viewBox="0 0 24 24"
+               >
+                  <path
+                     d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"
+                  />
+               </svg>
+            </nav>
+
+            <main class="px-8 mx-auto w-[30rem">
+               <!-- carousel start -->
+               <div class="slider-container mx-auto mt-3 w-[25rem">
+                  <div class="slider" id="slider">
+                     <img
+                        src="../src/img/banner1.jpg"
+                        class="slide"
+                        alt="slide 1"
+                     />
+                     <img
+                        src="../src/img/banner2.jpg"
+                        class="slide"
+                        alt="slide 2"
+                     />
+                     <img
+                        src="../src/img/banner3.jpg"
+                        class="slide"
+                        alt="slide 3"
+                     />
+                     <img
+                        src="../src/img/banner4.jpg"
+                        class="slide"
+                        alt="slide 4"
+                     />
+                     <img
+                        src="../src/img/banner5.jpg"
+                        class="slide"
+                        alt="slide 5"
+                     />
+                  </div>
+               </div>
+               <div class="dots" id="dots"></div>
+               <!-- carousel end -->
+
+               <!-- info saldo start -->
+               <section class="container my-3 mx-auto">
+                  <div class="rounded-md w-[25rem] p-8 shadow-md mx-auto">
+                     <p class="text-2xl mb-2 tracking-wider">
+                        Hallo, <span id="nameDisplay"></span>
+                     </p>
+                     <div class="flex gap-4 items-center mb-2">
+                        <img
+                           src="../src/img/pngegg.png"
+                           alt="wallet"
+                           width="30px"
+                        />
+                        <div class="">
+                           <p class="text-sm text-gray-400">saldo anda</p>
+                           <h2 class="text-xl font-bold tracking-wider">
+                              <span id="saldo"></span>
+                           </h2>
+                        </div>
+                     </div>
+                     <div class="flex gap-3 items-center text-white">
+                        <button
+                           class="flex gap-2 items-center rounded-md px-4 py-2 bg-green-600 hover:bg-green-400"
+                           id="isiSaldo"
+                        >
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="15px"
+                              height="15px"
+                              viewBox="0 -0.5 21 21"
+                              version="1.1"
+                           >
+                              <title>plus_circle [#1427]</title>
+                              <desc>Created with Sketch.</desc>
+                              <defs></defs>
+                              <g
+                                 id="Page-1"
+                                 stroke="none"
+                                 stroke-width="1"
+                                 fill="white"
+                                 fill-rule="evenodd"
+                              >
+                                 <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-179.000000, -600.000000)"
+                                    fill="#eaeaea"
+                                 >
+                                    <g
+                                       id="icons"
+                                       transform="translate(56.000000, 160.000000)"
+                                    >
+                                       <path
+                                          d="M137.7,450 C137.7,450.552 137.2296,451 136.65,451 L134.55,451 L134.55,453 C134.55,453.552 134.0796,454 133.5,454 C132.9204,454 132.45,453.552 132.45,453 L132.45,451 L130.35,451 C129.7704,451 129.3,450.552 129.3,450 C129.3,449.448 129.7704,449 130.35,449 L132.45,449 L132.45,447 C132.45,446.448 132.9204,446 133.5,446 C134.0796,446 134.55,446.448 134.55,447 L134.55,449 L136.65,449 C137.2296,449 137.7,449.448 137.7,450 M133.5,458 C128.86845,458 125.1,454.411 125.1,450 C125.1,445.589 128.86845,442 133.5,442 C138.13155,442 141.9,445.589 141.9,450 C141.9,454.411 138.13155,458 133.5,458 M133.5,440 C127.70085,440 123,444.477 123,450 C123,455.523 127.70085,460 133.5,460 C139.29915,460 144,455.523 144,450 C144,444.477 139.29915,440 133.5,440"
+                                          id="plus_circle-[#1427]"
+                                       ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                           isi ulang
+                        </button>
+                        <button
+                           class="flex gap-2 items-center rounded-md px-4 py-2 bg-red-600 hover:bg-red-400"
+                           id="withdraw"
+                        >
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="15px"
+                              height="15px"
+                              viewBox="0 -0.5 21 21"
+                              version="1.1"
+                           >
+                              <title>minus_circle [#1429]</title>
+                              <desc>Created with Sketch.</desc>
+                              <defs></defs>
+                              <g
+                                 id="Page-1"
+                                 stroke="none"
+                                 stroke-width="1"
+                                 fill="none"
+                                 fill-rule="evenodd"
+                              >
+                                 <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-99.000000, -600.000000)"
+                                    fill="#eaeaea"
+                                 >
+                                    <g
+                                       id="icons"
+                                       transform="translate(56.000000, 160.000000)"
+                                    >
+                                       <path
+                                          d="M49.3,451 L57.7,451 L57.7,449 L49.3,449 L49.3,451 Z M53.5,458 C48.8674,458 45.1,454.411 45.1,450 C45.1,445.588 48.8674,442 53.5,442 C58.13155,442 61.9,445.588 61.9,450 C61.9,454.411 58.13155,458 53.5,458 L53.5,458 Z M53.5,440 C47.70085,440 43,444.477 43,450 C43,455.523 47.70085,460 53.5,460 C59.2981,460 64,455.523 64,450 C64,444.477 59.2981,440 53.5,440 L53.5,440 Z"
+                                          id="minus_circle-[#1429]"
+                                       ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                           penarikan
+                        </button>
+                     </div>
+                  </div>
+               </section>
+               <!-- info saldo end -->
+
+               <!-- info level start -->
+               <section class="container my-3 w-[30rem] mx-auto">
+                  <h1 class="font-bold text-xl">Level</h1>
+                  <div class="flow-x flex gap-5 mt-2">
+                     <div
+                        class="bg-gray-900 rounded-md text-white p-5 w-[15rem]"
+                     >
+                        <h2 class="font-semibold mb-1">Classic</h2>
+                        <p class="text-sm">Tarif Komisi : 20%</p>
+                        <p class="text-sm my-1">Jumlah Pesanan : 15</p>
+                        <p class="text-sm whitespace-nowrap">
+                           Saldo Minimal : Rp.30.0000
+                        </p>
+                     </div>
+                     <div
+                        class="bg-gray-900 rounded-md text-white p-5 w-[15rem]"
+                     >
+                        <h2 class="font-semibold mb-1">Silver</h2>
+                        <p class="text-sm">Tarif Komisi : 20%</p>
+                        <p class="text-sm my-1">Jumlah Pesanan : 25</p>
+                        <p class="text-sm whitespace-nowrap">
+                           Saldo Minimal : Rp.5.000.0000
+                        </p>
+                     </div>
+                     <div
+                        class="bg-gray-900 rounded-md text-white p-5 w-[15rem]"
+                     >
+                        <h2 class="font-semibold mb-1">Gold</h2>
+                        <p class="text-sm">Tarif Komisi : 30%</p>
+                        <p class="text-sm my-1">Jumlah Pesanan : 35</p>
+                        <p class="text-sm whitespace-nowrap">
+                           Saldo Minimal : Rp.20.000.0000
+                        </p>
+                     </div>
+                     <div
+                        class="bg-gray-900 rounded-md text-white p-5 w-[15rem]"
+                     >
+                        <h2 class="font-semibold mb-1">Platinum</h2>
+                        <p class="text-sm">Tarif Komisi : 35%</p>
+                        <p class="text-sm my-1">Jumlah Pesanan : 40</p>
+                        <p class="text-sm whitespace-nowrap">
+                           Saldo Minimal : Rp.50.000.0000
+                        </p>
+                     </div>
+                  </div>
+               </section>
+               <!-- info level end -->
+
+               <!-- pendukung start -->
+               <section class="container my-3 mx-auto w-[30rem]">
+                  <h1 class="font-bold text-xl">Berizin Dan Di Awasi Oleh</h1>
+                  <div class="flex col-3 gap-5 mt-2">
+                     <div class="img bg-gray-200 rounded-xl text-white p-5">
+                        <img
+                           src="../src/img/Logo-OJK.png"
+                           alt="Ojk"
+                           width="150px"
+                           class="mt-2"
+                        />
+                     </div>
+                     <div class="img bg-gray-200 rounded-xl text-white p-5">
+                        <img
+                           src="../src/img/Kominfo.png"
+                           alt=""
+                           width="150px"
+                        />
+                     </div>
+                     <div class="img bg-gray-200 rounded-xl text-white px-2">
+                        <img src="../src/img/afpi.png" alt="" width="150px" />
+                     </div>
+                  </div>
+               </section>
+               <!-- pendukung end -->
+            </main>
+
+            <footer
+               class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-100"
+            >
+               <div
+                  class="w-[40rem] bg-gray-900 text-white flex flex-auto justify-around px-5 py-4 items-center rounded-xl"
+               >
+                  <a
+                     href="#"
+                     class="text-xl rounded-l-xl hover:text-gray-400 p-3 font-bold"
+                     >Home</a
+                  >
+                  <a
+                     href="../components/task-page.html"
+                     class="text-md rounded-l-xl hover:text-gray-400"
+                     >Tugas</a
+                  >
+                  <a
+                     href="../components/dashboard.html"
+                     class="text-md rounded-l-xl hover:text-gray-400"
+                     >Dashboard</a
+                  >
+                  <a
+                     href="../components/help-page.html"
+                     class="text-md rounded-l-xl hover:text-gray-400"
+                     >Bantuan</a
+                  >
+                  <a
+                     href="../components/profil.html"
+                     class="text-md rounded-l-xl hover:text-gray-400"
+                     >Profil</a
+                  >
+               </div>
+            </footer>
+         </div>
+      </section>
+
+      <script src="../src/js/slide.js"></script>
+      <script src="../src/js/data.js"></script>
+   </body>
+</html>

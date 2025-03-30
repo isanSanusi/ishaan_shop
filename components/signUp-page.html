@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Signup page</title>
+      <link rel="stylesheet" href="../src/css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body class="font-[Poppins] bg-pink-200">
+      <div class="">
+         <main id="signup-page" class="h-screen my-8">
+            <div
+               class="align-self-center bg-white shadow-md rounded-2xl p-8 max-w-md w-full"
+            >
+               <div class="flex justify-start items-center gap-1">
+                  <img
+                     src="../src/img/Tiktok-Shop.png"
+                     alt="logo1"
+                     width="30px"
+                     height="30px"
+                  />
+                  <h2 class="text-xs text-gray-800">Daftar Akun Baru</h2>
+               </div>
+               <div class="p-8 flex justify-center">
+                  <img src="../src/img/Tiktok-Logo.png" alt="" width="100px" />
+               </div>
+
+               <form id="signupForm">
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="text"
+                        id="username"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="username"
+                        class="absolute left-4 top-2 text-transparent text-xs transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Username
+                     </label>
+                  </div>
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="text"
+                        id="handphone"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="handphone"
+                        class="absolute left-4 top-2 text-transparent text-xs transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        No Hp
+                     </label>
+                  </div>
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="password"
+                        id="password"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="password"
+                        class="absolute left-4 top-2 text-transparent text-xs transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Password
+                     </label>
+                  </div>
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="password"
+                        id="confpassword"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="confpassword"
+                        class="absolute left-4 top-2 text-transparent text-xs transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Konfirmasi Password
+                     </label>
+                  </div>
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="password"
+                        id="passwordwd"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="passwordwd"
+                        class="absolute left-4 top-2 text-transparent text-xs transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Password Penarikan
+                     </label>
+                  </div>
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="password"
+                        id="confpasswd"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="confpasswd"
+                        class="absolute left-4 top-2 text-transparent text-xs transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Konfirmasi Password Penarikan
+                     </label>
+                  </div>
+
+                  <button
+                     type="submit"
+                     id="signUp-btn"
+                     class="w-full bg-gray-900 text-white py-2 rounded-2xl hover:bg-gray-700 transition"
+                  >
+                     Daftar
+                  </button>
+               </form>
+
+               <p class="text-sm text-center text-gray-600 mt-4">
+                  Sudah punya akun?
+                  <a
+                     href="#"
+                     class="text-blue-500 hover:underline"
+                     onclick="toLogin()"
+                     >Masuk</a
+                  >
+               </p>
+            </div>
+         </main>
+
+         <!-- form login -->
+         <main id="login-page" class="h-screen my-8">
+            <div
+               class="align-self-center bg-white shadow-md rounded-2xl p-8 max-w-md w-full"
+            >
+               <div class="flex justify-start items-center gap-1">
+                  <img
+                     src="../src/img/Tiktok-Shop.png"
+                     alt="logo1"
+                     width="30px"
+                     height="30px"
+                  />
+                  <h2 class="text-xs text-gray-800">Masuk ke Akun Anda</h2>
+               </div>
+               <div class="p-8 flex justify-center">
+                  <img src="../src/img/Tiktok-Logo.png" alt="" width="100px" />
+               </div>
+
+               <form id="loginForm">
+                  <div class="relative w-100 mb-5">
+                     <input
+                        type="text"
+                        id="username-Login"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="username-login"
+                        class="absolute left-4 top-2 text-transparent text-sm transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Username
+                     </label>
+                  </div>
+                  <div class="relative w-100 mb-4">
+                     <input
+                        type="password"
+                        id="password-Login"
+                        class="peer w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent rounded-2xl"
+                        placeholder=" "
+                     />
+
+                     <label
+                        for="password-login"
+                        class="absolute left-4 top-2 text-transparent text-sm transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1"
+                     >
+                        Password
+                     </label>
+                  </div>
+
+                  <button
+                     id="btn-login"
+                     type="submit"
+                     class="w-full bg-gray-900 text-white py-2 rounded-2xl hover:bg-gray-700 transition"
+                  >
+                     Masuk
+                  </button>
+               </form>
+
+               <p class="text-sm text-center text-gray-600 mt-4">
+                  Belum punya akun?
+                  <a
+                     href="#"
+                     class="text-blue-500 hover:underline"
+                     onclick="toSignup()"
+                     >Daftar</a
+                  >
+               </p>
+            </div>
+         </main>
+
+         <footer class="col-6 text-sm text-gray-600 text-center shadow-md">
+            <span>&copy; 2018-2025</span>
+            <p>Allright Reserved</p>
+         </footer>
+      </div>
+      <!-- form signup -->
+
+      <script src="../src/js/validations.js"></script>
+      <script>
+         let loginPage = document.getElementById("login-page");
+         let signupPage = document.getElementById("signup-page");
+
+         signupPage.style.display = "none";
+         loginPage.style.display = "flex";
+
+         function toSignup() {
+            signupPage.style.display = "flex";
+            loginPage.style.display = "none";
+         }
+
+         function toLogin() {
+            signupPage.style.display = "none";
+            loginPage.style.display = "flex";
+         }
+
+         toSignup();
+         toLogin();
+      </script>
+   </body>
+</html>

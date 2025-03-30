@@ -1,3 +1,12 @@
+// Cek apakah ada user yang terdaftar di localStorage
+let users = JSON.parse(localStorage.getItem("users")) || [];
+let loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+// Jika tidak ada user terdaftar atau tidak ada yang login, alihkan ke login page
+if (!users.length || !loggedInUser) {
+   window.location.href = "./components/signUp-page.html"; // Ganti dengan path ke halaman login
+}
+
 // patching data from storage
 window.addEventListener("DOMContentLoaded", (e) => {
    e.preventDefault();
